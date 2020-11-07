@@ -4,100 +4,147 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="../estilos/hoja_css.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/02f12f25c6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <header  class="row">
-        <div class="col-6">
+        <div class="col-6 centrarTexto">
             <p>+34 622 84 89 94</p>
         </div>
-        <div class="col-6 alinearTextoDerecha">
+        <div class="col-6 centrarTexto">
             <p>correoejemplo@gmail.com</p>
         </div>
     </header>
-    <section class="z-index-carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100 h-45" src="../imagenes/Carousel1.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-color-greenyellow">Arroces que te tranportan a otro continente</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 h-45" src="../imagenes/Carousel2.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-color-white">Prueba nuestras especialidades en Sushi</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 h-45" src="../imagenes/Carousel3.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-color-white">No te arrepentiras de probar nuestros boles Ramen</h5>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </section>
 
-    <nav class="z-index-nav">
-        <a href="#" src="../imagenes/logo.PNG"></a>
-        <a href="#">COMIDA CHINA</a>
-        <a href="#">COMIDA JAPONESA</a>
-        <a href="#">COMIDA COREANA</a>
-        <a href="#">MENÚS</a>
-        <a href="#">CONTACTO</a>
+    <!-- NavBar -->
+    <nav class="z-index-nav row centrar-v">
+        <div>
+            <a href="#"><img src="../imagenes/logo.PNG" class="sizeLogoNav"></a>
+        </div>
+        <div>
+            <a href="comida/China/entrantes_sopas.html">COMIDA CHINA</a>
+        </div>
+        <div>
+            <a href="comida/Japonesa/entrantes.html">COMIDA JAPONESA</a>
+        </div>
+        <div>
+            <a href="comida/Coreana/entrantesBanchan.html">COMIDA COREANA</a>
+        </div>
+        <div>
+            <a href="PagMenus.html">MENÚS</a>
+        </div>
+        <div>
+            <a href="PagContactos.html">CONTACTO</a>
+        </div>
     </nav>
-    <section class="row">
-        <div class="col-4 centrar-v column">
+
+    <!-- Slider -->
+    <div class="slideshow-container width-100" id="id_sectionCarousel">
+
+        <div class="mySlides fade">
+            <img class="img_Slider" src="../imagenes/Carousel1.jpg" style="width:100%">
+            <div class="text">Los mejores arroces asiáticos</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img_Slider" src="../imagenes/Carousel2.jpg" style="width:100%">
+            <div class="text">No te pierdas nuestra selección de Sushi</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img_Slider" src="../imagenes/Carousel3.jpg" style="width:100%">
+            <div class="text">Nuestro querido Ramen, irresistible</div>
+        </div>
+    </div>
+
+    <!-- info con las tres imágenes -->
+    <section class="row" id="id_section3images">
+        <div class="col-3 centrar-v column">
             <div>
                 <img src="../imagenes/IntroComidaChina.png">
-                <p class="bg-color-greenyellow col-12 centrarTexto border-red">Comida China</p>
+                <p class="bg-color-greenyellow col-12 centrarTexto">Comida China</p>
             </div>
             <div class="centrar-v">
-                <a href="#" class="rounded-border bg-color-red">Más info</a>
+                <a href="comida/China/entrantes_sopas.html" class="rounded-border bg-color-red">Más info</a>
             </div>
-
         </div>
-        <div class="col-4 centrar-v column">
+        <div class="col-3 centrar-v column">
             <div>
                 <img src="../imagenes/IntroComidaJaponesa.png">
-                <p class="bg-color-greenyellow col-12 centrarTexto border-red">Comida Japonesa</p>
+                <p class="bg-color-greenyellow col-12 centrarTexto">Comida Japonesa</p>
             </div>
             <div class="centrar-v">
-                <a href="#" class="rounded-border bg-color-red">Más info</a>
+                <a href="comida/Japonesa/entrantes.html" class="rounded-border bg-color-red">Más info</a>
             </div>
 
         </div>
-        <div class="col-4 centrar-v column">
+        <div class="col-3 centrar-v column">
             <div>
                 <img src="../imagenes/IntroComidaCoreana.png">
-                <p class="bg-color-greenyellow col-12 centrarTexto border-red">Comida Coreana</p>
+                <p class="bg-color-greenyellow col-12 centrarTexto">Comida Coreana</p>
             </div>
             <div class="centrar-v">
-                <a href="#" class="rounded-border bg-color-red">Más info</a>
+                <a href="comida/Coreana/entrantesBanchan.html" class="rounded-border bg-color-red" style="text-decoration: none">Más info</a>
             </div>
         </div>
     </section>
 
+    <!-- Política de la empresa -->
+    <section>
+        <p id="id_txt_Descripcion">
+            Shokumotsu consiste en un restaurante que vende todo tipo de comida asiática, especializandose
+            en la comida china, japonesa y coreana.<br><br>
+            Nuestro objetivo es transportar al continente asiático a nuestros clientes con tan solo un bocado
+            sintiendo todo el sabor oriental desde su querida ciudad de Madrid.<br><br>
+            También queremos conseguir que esa gente que reniega un poco de lo desconocido y no lo sacas nunca
+            de su bar con sus tapitas y su jammoncito, pruebe la auténtica comida asiática y queden fascinados con
+            sus encantos. Desde las comidas picantes y agridulces de la comida china, pasando por el mítico kimmchi
+            famoso en Corea, hasta el auténtico Shoyu Ramen de Japón, todo esto con auténticos ingredientes exportados
+            de sus respectivos países.<br><br>
+            Ven y disfruta de nuestra profesionalidad, no te arrepentirás.
+        </p>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <!-- footer -->
+    <footer class="row">
+        <div class="col-3">
+            <img src="../imagenes/logo.PNG" class="sizeLogoFooter">
+        </div>
+        <div class="txt_Footer col-3">
+            <h1>Atención al Cliente:</h1>
+            <a href="PagContactos.html">Contacto</a>
+            <p>+34 622848994</p>
+        </div>
+        <div class="txt_Footer col-3">
+            <h1>Nuestros restaurantes:</h1>
+            <p>Madrid</p>
+            <p>Alicante (Proximamente)</p>
+        </div>
+        <div class="txt_Footer col-3">
+            <h1>Nuestras redes:</h1>
+            <p><a href="https://www.instagram.com/explore/tags/comidaasiatica/">Instagram</a>  <i class="fab fa-instagram"></i></p>
+            <p><a href="https://www.facebook.com/hashtag/comidaasiatica">FaceBook</a>  <i class="fab fa-facebook-square"></i></p>
+        </div>
+    </footer>
+    </body>
+
+    <!-- javaScript Slider -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+
 </html>
